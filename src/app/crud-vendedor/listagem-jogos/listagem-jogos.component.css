@@ -1,0 +1,94 @@
+:host {
+  display: block;
+}
+
+.lista-jogos-container {
+  background-color: #F0FFFF;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lista-jogos-container h2 {
+  color: #183153;
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.tabela-wrapper {
+  overflow-x: auto;
+}
+
+.tabela-jogos {
+  width: 100%;
+  border-collapse: collapse;
+  background-color:  #F0FFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tabela-jogos th,
+.tabela-jogos td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+}
+
+.tabela-jogos th {
+  background-color: #183153;
+  color: white;
+}
+
+.tabela-jogos tr:hover {
+  background-color: #f0f8ff;
+}
+
+.imagem-cell {
+  max-width: 100px;
+  padding: 10px;
+}
+
+.imagem-jogo {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-editar,
+.btn-excluir {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 6px;
+}
+
+.btn-editar {
+  background-color: #183153;
+  color: white;
+}
+
+.btn-editar:hover {
+  background-color: #00a86b;
+  color: #f0ffff;
+}
+
+.btn-excluir {
+  background-color: #b22222;
+  color: white;
+}
+
+.btn-excluir:hover {
+  background-color: #8b0000;
+}

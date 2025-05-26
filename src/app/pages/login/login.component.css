@@ -1,0 +1,122 @@
+.login-box {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: #f0f8ff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-box h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #183153;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 10px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #183153;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-option input[type="radio"] {
+  display: none;
+}
+
+.custom-radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #00a86b;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+}
+
+.radio-option input[type="radio"]:checked + .custom-radio {
+  background-color: #00a86b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: 600;
+  color: #183153;
+  margin-bottom: 4px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #183153;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #183153;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button[type="submit"]:hover {
+  background-color: #00a86b;
+  transform: scale(1.01);
+}
+
+.cadastro-box {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 12px;
+  color: #183153;
+}
+
+.cadastro-link {
+  margin-left: 6px;
+  color: #00a86b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cadastro-link:hover {
+  text-decoration: underline;
+}

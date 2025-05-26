@@ -1,0 +1,46 @@
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="formulario">
+  <p>Alterar Jogo</p>
+
+  <div class="campo-form">
+    <label for="titulo">Título:</label>
+    <input
+      id="titulo"
+      type="text"
+      formControlName="titulo"
+      placeholder="Insira o título do jogo"
+    />
+  </div>
+
+  <div class="campo-form">
+    <label for="genero">Gênero:</label>
+    <input
+      id="genero"
+      type="text"
+      formControlName="genero"
+      placeholder="Insira o gênero"
+    />
+  </div>
+
+  <div class="campo-form">
+    <label for="preco">Preço:</label>
+    <input
+      id="preco"
+      type="number"
+      formControlName="preco"
+      placeholder="Insira o preço"
+    />
+  </div>
+
+  <div class="campo-form">
+    <label for="imagemUrl">URL da Imagem:</label>
+    <input
+      id="imagemUrl"
+      type="text"
+      formControlName="imagemUrl"
+      placeholder="http://exemplo.com/imagem.jpg"
+    />
+  </div>
+
+  <button type="submit" [disabled]="form.invalid">Salvar</button>
+</form>

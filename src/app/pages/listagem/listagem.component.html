@@ -1,0 +1,25 @@
+<div class="lista-jogos-container">
+  <h2>Lista dos Clientes</h2>
+  <div class="tabela-wrapper">
+    <table class="tabela-jogos">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (cliente of listaClientes; track cliente) {
+          <tr>
+            <td>{{ cliente.id }}</td>
+            <td>{{ cliente.nome }}</td>
+            <td>{{ cliente.email }}</td>
+            <td>{{ cliente.telefone }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

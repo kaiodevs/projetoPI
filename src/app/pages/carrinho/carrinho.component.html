@@ -1,0 +1,26 @@
+<div class="container-carrinho">
+  <div class="card itens">
+    <h2 class="titulo-carrinho">Meu Carrinho</h2>
+
+    <div *ngIf="jogosNoCarrinho.length === 0">
+      <p>Seu carrinho está vazio.</p>
+    </div>
+
+    <div *ngFor="let jogo of jogosNoCarrinho" class="item-carrinho">
+      <img [src]="jogo.imagemUrl" alt="{{ jogo.titulo }}" />
+      <div>
+        <h3>{{ jogo.titulo }}</h3>
+        <p><strong>Preço:</strong> {{ jogo.preco | currency:'BRL' }}</p>
+        <button (click)="removerDoCarrinho(jogo)">Remover</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card checkout" *ngIf="jogosNoCarrinho.length > 0">
+    <div>
+      <h3>Resumo do Pedido</h3>
+      <div class="valor-total">Total: {{ totalCompra | currency:'BRL' }}</div>
+    </div>
+    <button (click)="finalizarCompra()">Finalizar Compra</button>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+:host {
+  display: block;
+}
+
+.consulta-container {
+  background-color: #F0FFFF;
+  padding: 20px 30px;
+  max-width: 600px;
+  margin: 60px auto;
+  border-radius: 14px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.consulta-container form {
+  margin-bottom: 20px;
+}
+
+.consulta-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #183153;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.consulta-container input[type="text"] {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.consulta-container input[type="text"]:focus {
+  border-color: #00A86B;
+  outline: none;
+}
+
+.btn-buscar {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #183153;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-buscar:hover {
+  background-color: #00A86B;
+  color: #F0FFFF;
+}
+
+.jogo-dados {
+  background-color: #F0FFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.jogo-dados h2 {
+  color: #183153;
+  margin-bottom: 16px;
+}
+
+.jogo-dados p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.imagem-container {
+  margin-bottom: 15px;
+}
+
+.imagem-jogo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.erro-busca {
+  margin-top: 20px;
+  color: #B22222;
+  font-weight: bold;
+  text-align: center;
+}

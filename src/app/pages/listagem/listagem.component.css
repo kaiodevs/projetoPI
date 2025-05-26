@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.content-container {
+  background-color: #f0ffff;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.content-container h2 {
+  color: #183153;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table th,
+table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+}
+
+table th {
+  background-color: #183153;
+  color: white;
+}
+
+table tr:hover {
+  background-color: #f0f8ff;
+}
+.lista-jogos-container h2 {
+  font-family: 'Courier New', Courier, monospace;
+}

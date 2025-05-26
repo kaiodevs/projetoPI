@@ -1,0 +1,55 @@
+<div class="consulta-container">
+  <form (ngSubmit)="buscarCliente()">
+    <label for="input-id">Informe o ID do Cliente:</label>
+    <input
+      type="text"
+      id="input-id"
+      name="input-id"
+      [(ngModel)]="idBusca"
+      class="input-id"
+      required
+      placeholder="Insira o ID do Cliente"
+    />
+    <button type="submit" class="btn-buscar">Buscar</button>
+  </form>
+
+  <div *ngIf="clienteEncontrado" class="cliente-dados">
+    <h2>Dados do Cliente</h2>
+    <p><strong>ID:</strong> {{ clienteEncontrado.id }}</p>
+    <p><strong>Nome:</strong> {{ clienteEncontrado.nome }}</p>
+    <p><strong>Email:</strong> {{ clienteEncontrado.email }}</p>
+    <p><strong>Telefone:</strong> {{ clienteEncontrado.telefone }}</p>
+
+    <div *ngIf="pedidosCliente.length > 0" class="pedidos-lista">
+      <h3>Pedidos</h3>
+      <table class="tabela-pedidos">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Valor</th>
+            <th>Jogos</th> <!-- Coluna para os nomes dos jogos -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pedido of pedidosCliente">
+            <td>{{ pedido.id }}</td>
+            <td>R$ {{ pedido.valor | number: '1.2-2' }}</td>
+            <td>
+              <ul>
+                <li *ngFor="let nomeJogo of pedido.jogoNome">{{ nomeJogo }}</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div *ngIf="pedidosCliente.length === 0" class="sem-pedidos">
+      <p>Este cliente não possui pedidos cadastrados.</p>
+    </div>
+  </div>
+
+  <div *ngIf="erroBusca" class="erro-busca">
+    {{ erroBusca }}
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="loja">
+  <h2>Nosso catálogo de jogos</h2>
+
+  <div class="jogos-container">
+    <div *ngFor="let jogo of jogos" class="jogo">
+      <img [src]="jogo.imagemUrl" alt="{{ jogo.titulo }}" class="jogo-imagem" />
+      <h3>{{ jogo.titulo }}</h3>
+      <p><strong>Gênero:</strong> {{ jogo.genero }}</p>
+      <p><strong>Preço:</strong> R{{ jogo.preco | currency }}</p>
+      <button (click)="adicionarAoCarrinho(jogo)">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+</div>

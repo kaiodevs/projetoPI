@@ -1,0 +1,120 @@
+.consulta-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: #f0f8ff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: 600;
+  color: #183153;
+  margin-bottom: 6px;
+}
+
+.input-id {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.input-id:focus {
+  border-color: #183153;
+  outline: none;
+}
+
+.btn-buscar {
+  background-color: #183153;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: 600;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-buscar:hover {
+  background-color: #00a86b;
+  transform: scale(1.02);
+}
+
+.cliente-dados {
+  background-color: #F0FFFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.cliente-dados h2 {
+  color: #183153;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cliente-dados p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.pedidos-lista {
+  margin-top: 24px;
+}
+
+.pedidos-lista h3 {
+  color: #183153;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.tabela-pedidos {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.tabela-pedidos th,
+.tabela-pedidos td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabela-pedidos th {
+  background-color: #f0f8ff;
+  color: #183153;
+}
+
+.sem-pedidos {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.erro-busca {
+  color: #B22222;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}

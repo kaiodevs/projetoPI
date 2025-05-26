@@ -1,0 +1,29 @@
+<form class="formulario">
+  <p>Faça seu cadastro aqui!</p>
+
+  <div class="campo-form">
+    <label for="input-nome">Nome:</label>
+    <input class="input-simples" id="input-nome" name="input-nome"
+      placeholder="Insira o seu Nome" type="text" [(ngModel)]="cliente.nome" />
+  </div>
+
+  <div class="campo-form">
+    <label for="input-email">E-mail:</label>
+    <input class="input-simples" id="input-email" name="input-email"
+      placeholder="Insira o seu Email" type="email" [(ngModel)]="cliente.email" />
+  </div>
+
+  <div class="campo-form">
+    <label for="input-telefone">Telefone:</label>
+    <input class="input-simples" id="input-telefone" name="input-telefone"
+      placeholder="Ex: (00)00000-0000" type="tel" [(ngModel)]="cliente.telefone" />
+  </div>
+
+  <div class="campo-form">
+    <label for="senha">Senha:</label>
+    <input class="input-simples" id="senha" name="senha"
+      type="password" placeholder="Insira a sua Senha" [(ngModel)]="cliente.senha" />
+  </div>
+
+  <button type="button" class="input-submeter" (click)="submeter()">Cadastrar</button>
+</form>

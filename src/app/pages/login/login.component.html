@@ -1,0 +1,96 @@
+<div class="login-box">
+  <h2>Bem vindo a PlayUp, faça seu Login!</h2>
+
+  <!-- Botões de rádio para escolher tipo de usuário -->
+  <div class="radio-group">
+    <label class="radio-option">
+      <input
+        type="radio"
+        name="tipoUsuario"
+        value="cliente"
+        [checked]="tipoUsuario === 'cliente'"
+        (change)="selecionarClienteOuVendedor('cliente')"
+      />
+      <span class="custom-radio"></span>
+      Cliente
+    </label>
+
+    <label class="radio-option">
+      <input
+        type="radio"
+        name="tipoUsuario"
+        value="vendedor"
+        [checked]="tipoUsuario === 'vendedor'"
+        (change)="selecionarClienteOuVendedor('vendedor')"
+      />
+      <span class="custom-radio"></span>
+      Vendedor
+    </label>
+  </div>
+
+  <!-- Mensagem de erro genérica -->
+  <div *ngIf="erroLogin"
+       style="color: red; text-align: center; margin-bottom: 1rem;">
+    {{ erroLogin }}
+  </div>
+
+  <!-- Login Cliente -->
+  <form
+    *ngIf="tipoUsuario === 'cliente'"
+    [formGroup]="formLoginFeitoCliente"
+    (ngSubmit)="loginCliente()"
+  >
+    <label for="email">Email</label>
+    <input
+      id="email"
+      formControlName="email"
+      type="email"
+      placeholder="Insira seu email"
+    />
+
+    <label for="senha">Senha</label>
+    <input
+      id="senha"
+      formControlName="senha"
+      type="password"
+      placeholder="Insira sua senha"
+    />
+
+    <button type="submit" [disabled]="formLoginFeitoCliente.invalid">
+      Logar como Cliente
+    </button>
+  </form>
+
+  <!-- Link de cadastro para cliente -->
+  <div class="cadastro-box" *ngIf="tipoUsuario === 'cliente'">
+    <span>Ainda não possui uma conta?</span>
+    <a class="cadastro-link" routerLink="/vendedor/cadastrar">Cadastre-se</a>
+  </div>
+
+  <!-- Login Vendedor -->
+  <form
+    *ngIf="tipoUsuario === 'vendedor'"
+    [formGroup]="formLoginVendedor"
+    (ngSubmit)="loginVendedor()"
+  >
+    <label for="emailVendedor">Email</label>
+    <input
+      id="emailVendedor"
+      formControlName="email"
+      type="email"
+      placeholder="Insira o email do vendedor"
+    />
+
+    <label for="senhaVendedor">Senha</label>
+    <input
+      id="senhaVendedor"
+      formControlName="senha"
+      type="password"
+      placeholder="Insira sua senha"
+    />
+
+    <button type="submit" [disabled]="formLoginVendedor.invalid">
+      Logar como Vendedor
+    </button>
+  </form>
+</div>

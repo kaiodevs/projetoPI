@@ -1,0 +1,59 @@
+<form class="formulario">
+  <p>Cadastre um jogo aqui</p>
+
+  <div class="campo-form">
+    <label for="input-titulo">Título:</label>
+    <input
+      class="input-simples"
+      id="input-titulo"
+      name="input-titulo"
+      placeholder="Insira o título do jogo"
+      type="text"
+      [(ngModel)]="jogo.titulo"
+      required
+    />
+  </div>
+
+  <div class="campo-form">
+    <label for="input-genero">Gênero:</label>
+    <input
+      class="input-simples"
+      id="input-genero"
+      name="input-genero"
+      placeholder="Insira o gênero"
+      type="text"
+      [(ngModel)]="jogo.genero"
+      required
+    />
+  </div>
+
+  <div class="campo-form">
+    <label for="input-preco">Preço:</label>
+    <input
+      class="input-simples"
+      id="input-preco"
+      name="input-preco"
+      placeholder="Insira o preço"
+      type="number"
+      [(ngModel)]="jogo.preco"
+      required
+    />
+  </div>
+
+  <div class="campo-form">
+    <label for="input-imagem">URL da Imagem:</label>
+    <input
+      class="input-simples"
+      id="input-imagem"
+      name="input-imagem"
+      placeholder="http://exemplo.com/imagem.jpg"
+      type="text"
+      [(ngModel)]="jogo.imagemUrl"
+      required
+    />
+  </div>
+
+  <button type="button" class="input-submeter" (click)="submeter()">
+    Cadastrar
+  </button>
+</form>

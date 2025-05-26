@@ -1,0 +1,163 @@
+{
+  "vendedores": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "senha": "1234"
+    },
+    {
+      "id": "2",
+      "email": "leo@venda.com",
+      "senha": "1234"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "a1c4",
+      "nome": "Bobby ",
+      "email": "bobby@gmail.com",
+      "telefone": "(33) 9998-9923",
+      "senha": "1234"
+    },
+    {
+      "id": "d4fe",
+      "nome": "Han Solo",
+      "email": "hansolo@gmail.com",
+      "telefone": "(12) 1355-3345",
+      "senha": "123456"
+    },
+    {
+      "id": "7034",
+      "nome": "João Junior",
+      "email": "joao@gmail.com",
+      "telefone": "(11) 9932-9945",
+      "senha": "1234"
+    }
+  ],
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "The Last of Us",
+      "genero": "Ação",
+      "preco": 54.99,
+      "imagemUrl": "https://cdn.awsli.com.br/2500x2500/2614/2614028/produto/250038945/the-last-of-us-capa-ps3-us_preto-vy93n6gwwn.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "God of War",
+      "genero": "Aventura",
+      "preco": 249.99,
+      "imagemUrl": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m66wpz67skoi50"
+    },
+    {
+      "id": "3",
+      "titulo": "Gta VI",
+      "genero": "Aventura",
+      "preco": 255.99,
+      "imagemUrl": "https://cdn.awsli.com.br/800x800/241/241991/produto/244718100/gta6-ppoc3jmjfh.png"
+    },
+    {
+      "id": "4",
+      "titulo": "Skate 3",
+      "genero": "Aventura",
+      "preco": 65.5,
+      "imagemUrl": "https://cdn.awsli.com.br/2500x2500/138/138431/produto/8155494/f04b69d36b.jpg"
+    },
+    {
+      "id": "5",
+      "titulo": "Super Metroid - Ediçao de colecionador",
+      "genero": "Plataforma",
+      "preco": 24.76,
+      "imagemUrl": "https://m.media-amazon.com/images/I/71CyJSNV1EL.jpg"
+    },
+    {
+      "id": "6",
+      "titulo": "Crash Titans ",
+      "genero": "Aventura",
+      "preco": 67.99,
+      "imagemUrl": "https://down-br.img.susercontent.com/file/sg-11134201-22110-7ox539vcw9jvc9"
+    },
+    {
+      "id": "7",
+      "titulo": "Minecraft",
+      "genero": "Exploração",
+      "preco": 89.78,
+      "imagemUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbDcRb797PMlDNqL4WK4jpdwZD5KEByrhbdA&s"
+    },
+    {
+      "id": "aa42",
+      "titulo": "Ghost of Tsushima",
+      "genero": "Mundo Aberto",
+      "preco": 354.99,
+      "imagemUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOxZUHmOmXN55AxA9CSn93765oxTQxkzN6QjRvEaiE7k2yCjIc3Pzxx2yWidZMAeHSjZc&usqp=CAU"
+    },
+    {
+      "id": "9b89",
+      "titulo": "Super Mario",
+      "genero": "Plataforma",
+      "preco": 54.99,
+      "imagemUrl": "https://cdn.awsli.com.br/600x700/1996/1996199/produto/253567721/super-mario-l3e2q1z2yw.png"
+    },
+    {
+      "id": "42cc",
+      "titulo": "Red  Dead Redemption 2",
+      "genero": "Mundo Aberto",
+      "preco": 278.43,
+      "imagemUrl": "https://m.media-amazon.com/images/I/71XrxGqPosL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "5e4a",
+      "titulo": "God of War Ragnarok",
+      "genero": "Ação",
+      "preco": 289.54,
+      "imagemUrl": "https://cdn.awsli.com.br/2500x2500/1190/1190229/produto/167444103/7a6ed36af59cd0d5f716115a8edff5d3-7qhb1eqibn.jpeg"
+    },
+    {
+      "id": "dce5",
+      "titulo": "Pokemon Fire Red",
+      "genero": "Aventura",
+      "preco": 76.43,
+      "imagemUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBY3NDExIgsKZvWGrWv3PI1nizyrSOPF8Gw&s"
+    },
+    {
+      "id": "cb70",
+      "titulo": "Pokemon Emerald",
+      "genero": "Aventura",
+      "preco": 76.32,
+      "imagemUrl": "https://images.launchbox-app.com/726ea3d1-3b01-4743-9eac-3084cf2d0227.png"
+    },
+    {
+      "id": "d216",
+      "titulo": "Call of Duty Black Ops 2",
+      "genero": "FPS",
+      "preco": 76.54,
+      "imagemUrl": "https://cdn.awsli.com.br/600x450/1211/1211986/produto/117769054/bf50dd3ae3.jpg"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "be9a",
+      "clienteId": "a1c4",
+      "valor": 54.99,
+      "jogoNome": [
+        "The Last of Us"
+      ]
+    },
+    {
+      "id": "4280",
+      "clienteId": "d4fe",
+      "valor": 249.99,
+      "jogoNome": [
+        "Super Metroid"
+      ]
+    },
+    {
+      "id": "2705",
+      "clienteId": "a1c4",
+      "valor": 254.99,
+      "jogoNome": [
+        "Ghost of Tsushima"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+.container-carrinho {
+  display: flex;
+  flex-direction: column; /* <-- muda para empilhar os cards */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background-color: #F0FFFF;
+  border-radius: 14px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card.itens {
+  width: 100%; /* ocupa largura total */
+}
+
+.card.checkout {
+  width: 100%; /* agora também ocupa toda a largura */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* alinha o conteúdo à direita */
+  gap: 20px;
+}
+
+.titulo-carrinho {
+  font-size: 25px;
+  font-weight: 700;
+  color: #183153;
+  margin-bottom: 30px;
+}
+
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-carrinho img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.item-carrinho h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.item-carrinho p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.item-carrinho button {
+  margin-top: 8px;
+  padding: 8px 14px;
+  background-color: #183153;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.item-carrinho button:hover {
+  background-color: #800020;
+  color: #F0FFFF;
+}
+
+.checkout h3 {
+  font-size: 20px;
+  color: #183153;
+  margin-bottom: 10px;
+}
+
+.checkout .valor-total {
+  font-size: 24px;
+  font-weight: bold;
+  color: #183153;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.checkout button {
+  width: 100%;
+  max-width: 300px; /* opcional: limita largura do botão */
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #183153;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout button:hover {
+  background-color: #00A86B;
+  color: #183153;
+}
+

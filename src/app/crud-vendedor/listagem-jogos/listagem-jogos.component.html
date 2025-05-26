@@ -1,0 +1,32 @@
+<div class="lista-jogos-container">
+  <h2>Lista de Jogos Disponíveis</h2>
+  <div class="tabela-wrapper">
+    <table class="tabela-jogos">
+      <thead>
+        <tr>
+          <th>Imagem</th>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Gênero</th>
+          <th>Preço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jogo of listaJogos">
+          <td class="imagem-cell">
+            <img [src]="jogo.imagemUrl" alt="{{jogo.titulo}}" class="imagem-jogo" />
+          </td>
+          <td>{{ jogo.id }}</td>
+          <td>{{ jogo.titulo }}</td>
+          <td>{{ jogo.genero }}</td>
+          <td>R$ {{ jogo.preco }}</td>
+          <td>
+            <button class="btn-editar" *ngIf="jogo.id !== undefined" (click)="editar(jogo.id!)">Editar</button>
+            <button class="btn-excluir" *ngIf="jogo.id !== undefined" (click)="excluir(jogo.id!)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

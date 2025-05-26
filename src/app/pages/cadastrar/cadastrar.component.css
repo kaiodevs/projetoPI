@@ -1,0 +1,76 @@
+.formulario {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: #f0f8ff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #183153;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #183153;
+}
+
+.input-simples,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-simples:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border-color: #183153;
+  outline: none;
+}
+
+.input-submeter {
+  background-color: #183153;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.input-submeter:hover {
+  background-color: #00a86b;
+  transform: scale(1.01);
+}

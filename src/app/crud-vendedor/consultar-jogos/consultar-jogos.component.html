@@ -1,0 +1,34 @@
+<div class="consulta-container">
+  <form (ngSubmit)="buscaJogo()">
+    <label for="input-id">Informe o ID do jogo: </label>
+    <input
+      type="text"
+      id="input-id"
+      name="input-id"
+      [(ngModel)]="idbusca"
+      class="input-id"
+      required
+    />
+
+    <button type="submit" class="btn-buscar">Buscar</button>
+  </form>
+
+  <div *ngIf="jogoEncontrado" class="jogo-dados">
+    <div *ngIf="jogoEncontrado.imagemUrl" class="imagem-container">
+      <img
+        [src]="jogoEncontrado.imagemUrl"
+        [alt]="jogoEncontrado.titulo"
+        class="imagem-jogo"
+      />
+    </div>
+
+    <h2>Dados do Jogo</h2>
+    <p><strong>ID:</strong> {{ jogoEncontrado.id }}</p>
+    <p><strong>Nome:</strong> {{ jogoEncontrado.titulo }}</p>
+    <p><strong>Preço:</strong> R$ {{ jogoEncontrado.preco | number:'1.2-2' }}</p>
+  </div>
+
+  <div *ngIf="erroBusca" class="erro-busca">
+    {{ erroBusca }}
+  </div>
+</div>

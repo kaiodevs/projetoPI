@@ -1,0 +1,66 @@
+.header-container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav.menu {
+  background-color: #f0ffff;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Courier New', Courier, monospace;
+
+  display: flex;           /* Alinha logo e menu em linha */
+  align-items: center;     /* Alinha verticalmente */
+  justify-content: space-between; /* Espaço entre logo e lista */
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  max-width: 150px;
+  margin-right: 20px; /* Espaço entre logo e menu */
+}
+
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-grow: 1; /* Faz a ul ocupar o espaço restante */
+}
+
+nav.menu li {
+  margin: 0;
+}
+
+nav.menu a {
+  display: inline-block;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #183153;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.menu a:hover {
+  background-color: #00a86b;
+  color: #ffffff;
+}
+
+nav.menu a.active {
+  background-color: #183153;
+  color: #ffffff;
+}
