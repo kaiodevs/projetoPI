@@ -5,7 +5,7 @@
 ---
 
 🧑‍💻 Autores
-✨ Desenvolvido por [Kaio Fernandes Dias] [github @kaiodevs ] e [Leonardo Augusto Dutra Lopes] [github @TicoFloppy]✨
+✨ Desenvolvido por Kaio Fernandes Dias github:@kaiodevs e Leonardo Augusto Dutra Lopes github:@TicoFloppy✨
 Alunos do Curso Tecnologia em Análise e Desenvolvimento de Sistemas.
 
 
