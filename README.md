@@ -49,7 +49,7 @@ Alunos do Curso Tecnologia em Análise e Desenvolvimento de Sistemas.
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/playup.git
+   git clone https://github.com/kaiodevs/projetoPI.git
    cd playup
 
 📌 Observações
