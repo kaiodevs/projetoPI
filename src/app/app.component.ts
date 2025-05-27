@@ -1,4 +1,3 @@
-// app.component.ts
 import { Component } from '@angular/core';
 import { LoginComponent } from './pages/login/login.component'; 
 import { RouterOutlet } from '@angular/router';
