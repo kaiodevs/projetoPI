@@ -29,7 +29,6 @@ export const routes: Routes = [
     path: 'vendedor',
     component: VendedorLayoutComponent,
     children: [
-      { path: 'cadastrar', component: CadastrarComponent },
       { path: 'consultar-clientes', component: ConsultarComponent },
       { path: 'listagem', component: ListagemComponent },
       { path: 'listagem-jogos', component: ListagemJogosComponent },
@@ -39,8 +38,7 @@ export const routes: Routes = [
 
     ]
   },
-
-  { path: 'cadastro', component: CadastrarComponent },
+  { path: 'cadastrar', component: CadastrarComponent },
 
   { path: '**', redirectTo: '' }
 ];

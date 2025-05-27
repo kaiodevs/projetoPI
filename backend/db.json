@@ -32,6 +32,13 @@
       "email": "joao@gmail.com",
       "telefone": "(11) 9932-9945",
       "senha": "1234"
+    },
+    {
+      "id": "984a",
+      "nome": "Jo",
+      "email": "j@gmail.com",
+      "telefone": "929993434",
+      "senha": "1234"
     }
   ],
   "jogos": [
@@ -157,6 +164,16 @@
       "valor": 254.99,
       "jogoNome": [
         "Ghost of Tsushima"
+      ]
+    },
+    {
+      "id": "dca3",
+      "clienteId": "a1c4",
+      "valor": 398.03000000000003,
+      "jogoNome": [
+        "Gta VI",
+        "Skate 3",
+        "Call of Duty Black Ops 2"
       ]
     }
   ]
