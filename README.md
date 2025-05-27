@@ -1,59 +1,56 @@
-# AngularTeste
+# 🎮 PlayUp – Loja de Jogos Online
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+**PlayUp** é uma loja virtual desenvolvida no Framework Angular 19, para o projeto do segundo semestre da disciplina de PI.
 
-## Development server
+---
 
-To start a local development server, run:
+🧑‍💻 Autores
+✨ Desenvolvido por [Kaio Fernandes Dias] [github @kaiodevs ] e [Leonardo Augusto Dutra Lopes] [github @TicoFloppy]✨
+Alunos do Curso Tecnologia em Análise e Desenvolvimento de Sistemas.
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📦 Funcionalidades
 
-## Code scaffolding
+### 👥 Acesso com Seleção de Perfil
+- No login possui a escolha entre **Cliente** e **Vendedor**, em seguida adicionando os dados para entrar no site.
+- Opção de cadastrar um novo cliente em baixo do formulario.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 🛒 Cliente
+- O cliente acessa o catálogo de jogos, após o login.
+- Pode adicionar os jogos ao Carrinho e finalizar a compra, sendo possivel remover itens que não dejesa comprar tambem.
 
-```bash
-ng generate component component-name
-```
+### 🧑‍💼 Vendedor
+- Pode cadastrar,consultar, editar e excluir os jogos (CRUD completo)
+- Possui a lista dos clientes cadastrados e consegue consultar os pedidos feitos por eles.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 📁 Estrutura de Dados
+- Tem uma Integração dos dados com **json-server** simulando um backend REST.
+- JSON possui os dados de todos os objetos, sendo eles os Clientes, Vendedores, Pedidos e Jogos.
 
-```bash
-ng generate --help
-```
+### 🎨 Design
+- Seu Layout é limpo e intuitivo com estilo **retrô pixel art**.
+- Animações suaves para uma boa experiência de usuário.
 
-## Building
+---
 
-To build the project run:
+## ⚙️ Tecnologias Utilizadas
 
-```bash
-ng build
-```
+- Angular 19+
+- TypeScript
+- RxJS
+- Angular Router
+- json-server (Fake API REST)
+- HTML5 + CSS3
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🚀 Como Executar Localmente
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/playup.git
+   cd playup
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📌 Observações
+- Este projeto foi desenvolvido com fins educacionais sendo assim considerar erros ou duplicidades de código.
+- Sinta-se à vontade para contribuir, sugerir melhorias!
