@@ -9,6 +9,7 @@
 ✨ Desenvolvido por Kaio Fernandes Dias github:@kaiodevs e Leonardo Augusto Dutra Lopes github:@TicoFloppy✨
 - Somos alunos do Curso Tecnologia em Análise e Desenvolvimento de Sistemas.
 
+---
 
 ## 📦 Funcionalidades
 
@@ -44,13 +45,6 @@
 - HTML5 + CSS3
 
 ---
-
-## 🚀 Como Executar Localmente
-
-1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/kaiodevs/projetoPI.git
-   cd playup
 
 📌 Observações
 - Este projeto foi desenvolvido com fins educacionais sendo assim considerar erros ou duplicidades de código.
